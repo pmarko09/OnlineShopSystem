@@ -19,8 +19,8 @@ import java.util.List;
 
 public class InvoiceService {
 
-    InvoiceFactory invoiceFactory = new InvoiceFactory();
-    Cart cart = new Cart();
+    private InvoiceFactory invoiceFactory = new InvoiceFactory();
+    private Cart cart = new Cart();
 
     /**
      * This method generates the invoice.
@@ -39,7 +39,7 @@ public class InvoiceService {
             }
             printInvoice(invoice);
         } catch (IllegalArgumentException e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
         }
     }
 

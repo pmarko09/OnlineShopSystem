@@ -13,7 +13,7 @@ import java.util.List;
  */
 
 public class OrderProcessor {
-    InvoiceService invoiceService = new InvoiceService();
+    private InvoiceService invoiceService = new InvoiceService();
     private List<Order> orders = new ArrayList<>();
 
     public List<Order> getOrders() {
